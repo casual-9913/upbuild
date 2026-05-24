@@ -1,7 +1,17 @@
 [package]
 name = "upbuild"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
+description = "Interactive CLI for updating Git repositories and building/deploying Docker workloads from YAML/JSON configs."
+license = "MIT"
+
 
 [dependencies]
-dotenvy = "0.15.7"
+anyhow = "1"
+clap = { version = "4.6.1", features = ["derive"] }
+dirs = "6"
+inquire = "0.9.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+yaml_serde = "0.10"
+shell-words = "1"
